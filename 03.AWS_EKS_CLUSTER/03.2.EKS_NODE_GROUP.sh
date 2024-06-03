@@ -28,7 +28,6 @@ aws iam attach-role-policy \
     --role-name $AWS_EKS_NODEGROUP_ROLE_NAME \
     --policy-arn arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
 
-
 # Creating Node Group Cluster
  aws eks create-nodegroup \
   --cluster-name $AWS_EKS_CLUSTER_NAME \
