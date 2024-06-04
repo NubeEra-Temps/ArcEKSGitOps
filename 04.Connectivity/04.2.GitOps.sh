@@ -6,6 +6,8 @@
 #     --cluster-type connectedClusters \
 #     --extension-type Microsoft.AzureArcData
 
+AZ_ARC_CLUSTER_NAME="UniqueName-EKS-Demo"$PAST_PATTERN
+
 az k8s-extension create \
   --name ArcExtensionFlux \
   --extension-type microsoft.flux \
