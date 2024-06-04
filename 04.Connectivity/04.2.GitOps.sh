@@ -7,15 +7,6 @@
 #     --extension-type Microsoft.AzureArcData
 
 AZ_ARC_CLUSTER_NAME=Arc-EKS-Demo
-az k8s-extension create \
-  --name ArcExtensionFlux \
-  --extension-type microsoft.flux \
-  --cluster-type connectedClusters \
-  --cluster-name $AZ_ARC_CLUSTER_NAME \
-  --resource-group $AZ_RG_NAME \
-  --scope cluster \
-  --auto-upgrade-minor-version true
-
 
 az k8s-extension create \
   --name ArcExtensionFlux \
